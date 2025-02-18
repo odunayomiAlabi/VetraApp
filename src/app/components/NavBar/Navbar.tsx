@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     {
       text: "Contact Us",
-      url: calendlyUrl,
+      url: "https://calendly.com/your-username",
       isButton: true,  // Mark this one as a button to differentiate it
     },
   ];
@@ -51,27 +51,29 @@ const Navbar = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6">
-            {menuOptions.map((option, index) => (
-              option.isButton ? (
-                <button
-                  key={index}
-                  className="px-4 py-2 text-white bg-green-700 rounded-md hover:bg-green-800"
-                  onClick={() => window.location.href = option.url}  // Redirect to Calendly or other URL
-                >
-                  {option.text}
-                </button>
-              ) : (
-                <Link
-                  key={index}
-                  href={option.url}
-                  className="text-gray-700 hover:text-gray-900"
-                >
-                  {option.text}
-                </Link>
-              )
+          {/* Centered Desktop Menu */}
+          <div className="hidden md:flex items-center justify-center flex-grow gap-6">
+            {menuOptions.slice(0, 2).map((option, index) => (
+              <Link
+                key={index}
+                href={"https://calendly.com/your-username"}
+                className="text-gray-700 hover:text-gray-900"
+              >
+                {option.text}
+              </Link>
             ))}
+          </div>
+
+          {/* Desktop Contact Button */}
+          <div className="hidden md:flex items-center">
+            {menuOptions[2].isButton && (
+              <button
+                className="px-4 py-2 text-white bg-green-700 rounded-md hover:bg-green-800"
+                onClick={() => window.location.href = menuOptions[2].url}  // Redirect to Calendly or other URL
+              >
+                {menuOptions[2].text}
+              </button>
+            )}
           </div>
         </div>
 
@@ -85,7 +87,7 @@ const Navbar = () => {
                     key={index}
                     className="w-full px-4 py-2 text-white bg-green-700 rounded-md hover:bg-green-800"
                     onClick={() => {
-                      window.location.href = option.url;
+                      window.location.href = "https://calendly.com/your-username";
                       setIsOpen(false); // Close the menu when clicked
                     }}
                   >
