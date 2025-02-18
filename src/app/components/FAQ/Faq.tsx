@@ -52,7 +52,7 @@ const FAQ = () => {
       >
         <h2 className="text-3xl font-bold text-center mb-2">FAQs</h2>
         <p className="text-center text-gray-600 mb-12">
-          You've Got Questions? We've Got Answers.
+          You&apos;ve Got Questions? We&apos;ve Got Answers.
         </p>
         <motion.div
           variants={staggerContainer}

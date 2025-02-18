@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
             <p className="text-gray-600 mb-6">
               Your startup, firm, or creative project might be brilliant, but 
-              without the right strategy, it's just another drop in an ocean of 
+              without the right strategy, it&apos;s just another drop in an ocean of 
               noise. We help you avoid that.
             </p>
             <motion.button

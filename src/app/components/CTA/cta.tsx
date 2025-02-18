@@ -6,7 +6,7 @@ const CTA = () => {
             Big Ideas. Big Stories. Bigger Impact
           </h2>
           <button className="px-6 py-3 bg-white text-green-600 rounded-md">
-            Let's talk
+            Let&apos;s talk
           </button>
         </div>
       </section>
