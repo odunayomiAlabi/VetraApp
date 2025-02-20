@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
           number: 3,
           title: "We Mix Strategy with Execution",
           description:
-            "This isn’t just a place for ideas—we build, test, refine, and deliver with purpose. Driven by precision and innovation, we ensure every project exceeds expectations. No guesswork, just results. Every time.",
+            "This isn’t a ‘throw ideas around’ kind of place. We build, we test, we optimise—and we deliver. Every single time.",
         },
       ];
     
