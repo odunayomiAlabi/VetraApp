@@ -176,7 +176,6 @@ const Testimonials = () => {
               </div>
             </AnimatePresence>
 
-            {/* Navigation Buttons */}
             <div className="absolute inset-y-1/2 flex justify-between w-full px-4 -mt-6">
               <button 
                 onClick={() => paginate(-1)} 
