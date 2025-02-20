@@ -25,7 +25,7 @@ const Footer = () => {
                          width={360}
                          className="w-full h-full object-cover"
                        />
-                       <p className="text-gray-700 font-bold">etra</p>
+                       <p className="text-700 font-bold text-white">etra</p>
                      </div>
           </div>
           

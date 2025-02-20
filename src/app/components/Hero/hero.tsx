@@ -24,7 +24,7 @@ const Hero = () => {
             variants={slideIn}
             className="text-center md:text-left"
           >
-            <span className="text-green-600 text-sm">By Better Marketing Team</span>
+            {/* <span className="text-green-600 text-sm">By Better Marketing Team</span> */}
             <h1 className="text-4xl font-bold mt-2 mb-4">
               For Startups, Scaleups, and Storytellers Who Refuse To Be Ignored
             </h1>
