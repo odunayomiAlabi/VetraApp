@@ -65,7 +65,7 @@ const Testimonials = () => {
         <div className="text-center mb-12">
           <h3 className="text-green-700 font-medium mb-2">What Our Partners Say</h3>
           <h2 className="text-3xl md:text-4xl font-bold">
-            You don't have to take our words for it...take theirs
+            You do&apos;t have to take our words for it...take theirs
           </h2>
         </div>
 
@@ -99,9 +99,9 @@ const Testimonials = () => {
                     <h3 className="font-bold text-lg">{testimonials[(page + testimonials.length - 1) % testimonials.length].name}</h3>
                     <p className="text-sm text-gray-600 mb-3">{testimonials[(page + testimonials.length - 1) % testimonials.length].position}</p>
                     <p className="text-xs text-gray-700 italic">
-                      <span className="text-green-700 text-xl">"</span>
+                      <span className="text-green-700 text-xl">&quot;</span>
                       {testimonials[(page + testimonials.length - 1) % testimonials.length].content.substring(0, 150)}...
-                      <span className="text-green-700 text-xl">"</span>
+                      <span className="text-green-700 text-xl">&quot;</span>
                     </p>
                   </div>
                 </motion.div>
@@ -135,9 +135,9 @@ const Testimonials = () => {
                     <h3 className="font-bold text-xl">{testimonials[page].name}</h3>
                     <p className="text-sm text-gray-600 mb-6">{testimonials[page].position}</p>
                     <p className="text-lg text-gray-800 text-center italic">
-                      <span className="text-green-700 text-3xl">"</span>
+                      <span className="text-green-700 text-3xl">&quot;</span>
                       {testimonials[page].content}
-                      <span className="text-green-700 text-3xl">"</span>
+                      <span className="text-green-700 text-3xl">&quot;</span>
                     </p>
                   </div>
                 </motion.div>
@@ -167,9 +167,9 @@ const Testimonials = () => {
                     <h3 className="font-bold text-lg">{testimonials[(page + 1) % testimonials.length].name}</h3>
                     <p className="text-sm text-gray-600 mb-3">{testimonials[(page + 1) % testimonials.length].position}</p>
                     <p className="text-xs text-gray-700 italic">
-                      <span className="text-green-700 text-xl">"</span>
+                      <span className="text-green-700 text-xl">&quot;</span>
                       {testimonials[(page + 1) % testimonials.length].content.substring(0, 150)}...
-                      <span className="text-green-700 text-xl">"</span>
+                      <span className="text-green-700 text-xl">&quot;</span>
                     </p>
                   </div>
                 </motion.div>

@@ -40,7 +40,7 @@ const CTA = () => {
                    text-black text-sm sm:text-base font-medium
                    rounded-full transition-all"
         >
-          Let's talk <span className="ml-2">→</span>
+          Let&apos;s talk <span className="ml-2">→</span>
         </motion.a>
       </div>
     </section>
