@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
               viewport={{ once: true }}
             >
               <p className="text-center text-1xl text-green-600 font-bold mb-2">
-          Why Choose Vera
+          Why Choose Vetra? 
         </p>
         <h2 className="text-3xl text-center font-bold mb-8">
           We are the bridge between creative marketing and storytelling

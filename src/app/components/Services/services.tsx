@@ -81,8 +81,8 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.items.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full" />
-                    <span>{item}</span>
+                    <span className="w-4 h-1 bg-gray-400 mx-2" />
+                    <span >{item}</span>
                   </li>
                 ))}
               </ul>
