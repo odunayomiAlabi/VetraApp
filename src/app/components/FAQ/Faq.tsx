@@ -81,7 +81,7 @@ const FAQ = () => {
               <motion.button
                 // whileHover={{ backgroundColor: "green", color: "white" }}
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
-                className="w-full p-4 text-left flex justify-between items-center bg-green-600"
+                className="w-full p-4 text-left flex justify-between items-center bg-green-700"
               >
                 <span>{faq.question}</span>
                 <motion.span

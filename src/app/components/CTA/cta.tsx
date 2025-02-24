@@ -35,10 +35,13 @@ const CTA = () => {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 
-                   bg-yellow-200 border-2 border-black
+          className="inline-flex items-center  sm:px-6 sm:py-3 
+                   bg-[#FFCC68] border-2 border-black
                    text-black text-sm sm:text-base font-medium
-                   rounded-full transition-all"
+                  px-6 py-3  rounded-lg
+                       shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]
+                       overflow-hidden
+                       outline-none"
         >
           Let&apos;s talk <span className="ml-2">→</span>
         </motion.a>
