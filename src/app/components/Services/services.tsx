@@ -21,21 +21,21 @@ const Services = () => {
             color: "bg-[#ffcc68]",
             border: "border border-black",
             items: ["Position your brand to standout, not just fit in", "Build marketing campaigns that drive customer, investor and industry buzz", "Turn data into actionable strategies that fuel growth"],
-            image: "/Assets/Frame17.png",
+            image: "/Assets/Vetra 6.png",
           },
           {
             title: "For Film & Entertainment",
             color: "bg-[#056839] text-white", 
             border: "border border-black", 
         items: ["Create campaigns that makes your film impossible to ignore", "Build pre-release hype that translates to real box office numbers", "Execute rollouts that don't just market films, but turn them into moments"],
-            image: "/Assets/Recording.png",
+            image: "/Assets/Vetra 8.png",
           },
           {
             title: "For Music & Media",
             color: "bg-[#ffac5f]", 
             border: "border border-black",
             items: ["Design artist and album campaigns that actually move culture", "Engage your fans across platforms, and keep them hooked to your music", "Make your music more than sound- make it a movement."],
-            image: "/Assets/salsa.png", 
+            image: "/Assets/Vetra 7.png", 
           },
       ];
     
