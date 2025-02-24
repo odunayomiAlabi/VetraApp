@@ -32,10 +32,10 @@ const Navbar = () => {
             {/* Logo and Brand Name */}
             <div className="flex items-center">
               <Image
-                src="/Assets/logo.png"
+                src="/Assets/logomark green.png"
                 alt="Logo"
-                height={190}
-                width={360}
+                height={50}
+                width={30}
                 className="w-full h-full object-cover"
               />
               <p className="text-gray-700 font-bold">etra</p>
@@ -43,7 +43,10 @@ const Navbar = () => {
             
             {/* Mobile menu button */}
             <button
-              className="md:hidden flex items-center justify-center"
+              className="md:hidden flex items-center justify-center   border border-black 
+                       shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]
+                       overflow-hidden
+                       outline-none"
               onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
               aria-label="Toggle menu"
             >

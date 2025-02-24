@@ -49,11 +49,11 @@ const Services = () => {
         className="max-w-6xl mx-auto"
       >
         <motion.div variants={fadeIn}>
-          <h2 className="text-center text-3xl font-bold mb-2">What We Do</h2>
-          <p className="text-center text-gray-600 mb-7">
+          <h2 className="text-center text-xl font-bold mb-2 text-[#056839]  p-2">What We Do</h2>
+          <p className="text-center text-2xl font-bold  mb-4">
             Services We Can Help You With
           </p>
-          <p className="text-center text-gray-600 mb-7">We don’t just market. We launch. We amplify. We turn brands into movements and stories into culture.</p>
+          <p className="text-center text-gray-600 mb-7 p-2">We don’t just market. We launch. We amplify. We turn brands into movements and stories into culture.</p>
 
         </motion.div>
         
@@ -81,7 +81,7 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.items.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
-                    <span className="w-4 h-1 bg-gray-400 mx-2" />
+                   <span className="w-1 h-1 bg-gray-400 mx-3 rounded-full" />
                     <span >{item}</span>
                   </li>
                 ))}

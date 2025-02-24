@@ -64,8 +64,8 @@ const Testimonials = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h3 className="text-green-700 font-medium mb-2">What Our Partners Say</h3>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            You do&apos;t have to take our words for it...take theirs
+          <h2 className="text-2xl md:text-2xl font-bold">
+            You don&apos;t have to take our words for it...take theirs
           </h2>
         </div>
 
