@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-4 sm:px-6 py-12 md:py-20">
+    <section className="px-4  mt-0">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
