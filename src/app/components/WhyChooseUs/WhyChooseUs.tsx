@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer } from '../annimation/variants';
 
 interface Feature {
-    number: number;
+    number: string;
     title: string;
     description: string;
   }
@@ -14,19 +14,19 @@ interface Feature {
 const WhyChooseUs = () => {
     const features: Feature[] = [
         {
-          number: 1,
+          number: '01',
           title: "We Speak Startup & Storytelling Fluently",
           description:
             "You don’t need another agency that ‘kinda gets it.’ We live in both worlds—the fast-paced chaos of building something new and the art of making people care.",
         },
         {
-          number: 2,
+          number: '02',
           title: "We Make People Feel",
           description:
             "Attention isn’t enough. If your audience doesn’t feel something, they won’t act. We craft stories that connect, campaigns that resonate, and launches that leave an imprint",
         },
         {
-          number: 3,
+          number: '03',
           title: "We Mix Strategy with Execution",
           description:
             "This isn’t a ‘throw ideas around’ kind of place. We build, we test, we optimise—and we deliver. Every single time.",
@@ -43,9 +43,10 @@ const WhyChooseUs = () => {
       }
     }
   };
+  const numberColors = [ ' text-[#056839]', 'text-[#E79800]',  'text-[#FFAC5F]'];
 
   return (
-    <section className="px-4 sm:px-6 py-12 md:py-20">
+    <section className="px-4 sm:px-6 py-12 md:py-20 bg-[#FFFEF0]">
       <div className="max-w-6xl mx-auto">
       <motion.h2 
               className="text-3xl font-bold mb-8"
@@ -80,14 +81,15 @@ const WhyChooseUs = () => {
               whileInView="animate"
               viewport={{ once: true }}
             >
-              {features.map((feature) => (
+              {features.map((feature, index) => (
                 <motion.div 
                   key={feature.number} 
-                  className="flex gap-4"
+                  className=" gap-4"
                   variants={featureVariants}
                   whileHover={{ x: 10 }}
                 >
-                  <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center flex-shrink-0">
+                  <div className={`w-8 h-8 text-4xl font-bold  flex items-center justify-center
+                                        ${numberColors[index % numberColors.length]}`}>
                     {feature.number}
                   </div>
                   <div>
