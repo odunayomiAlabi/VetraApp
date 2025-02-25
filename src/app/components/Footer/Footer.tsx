@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex justify-between items-center py-5 text-white">
           <div className="flex items-center">
             <Image
-              src="/Assets/logomark green.png"
+              src="/Assets/logomark white .png"
               alt="Logo"
               height={50}
               width={150}

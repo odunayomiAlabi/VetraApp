@@ -70,7 +70,7 @@ const Navbar = () => {
                   href={calendlyUrl}
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="  bg-green-800 text-white py-2 px-4 rounded-md border-2 border-green-900 shadow-md hover:bg-green-900 transition-colors flex items-center"
+                  className="  bg-green-800 text-white py-2 px-4 rounded-md border-2 border-green-900  hover:bg-green-900 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] sm:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-colors flex items-center"
                 >
                   Contact Us
                 </a>
