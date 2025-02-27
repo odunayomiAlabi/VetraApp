@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
 import Image from 'next/image';
 import { fadeIn, slideIn } from '../annimation/variants';
+import { useEffect } from 'react';
 
 const Hero = () => {
   // Calendly URL - replace with your actual Calendly link
@@ -12,6 +13,21 @@ const Hero = () => {
   const openCalendly = () => {
     window.open(calendlyUrl, '_blank');
   };
+  const headingControls = useAnimationControls();
+  
+  // Set up the color animation sequence
+  useEffect(() => {
+    const animateColors = async () => {
+      while (true) {
+        await headingControls.start({ color: "#1F2937", transition: { duration: 2 } });
+        await headingControls.start({ color: "#065F46", transition: {  duration:2} });
+        await headingControls.start({ color: "#0F172A", transition: {  duration: 2 } });
+        await headingControls.start({ color: "#5f0606", transition: {  duration: 2} });
+      }
+    };
+    
+    animateColors();
+  }, [headingControls]);
 
   return (
     <section className="px-4  mt-0">
@@ -25,9 +41,12 @@ const Hero = () => {
             className="text-center md:text-left"
           >
             {/* <span className="text-green-600 text-sm">By Better Marketing Team</span> */}
-            <h1 className="text-4xl font-bold mt-0 mb-8">
+            <motion.h1
+              className="text-4xl font-bold mt-0 mb-8"
+              animate={headingControls}
+            >
               For Startups, Scaleups, and Storytellers Who Refuse To Be Ignored
-            </h1>
+            </motion.h1>
             <p className="text-gray-600  mb-6">
               Your startup, firm, or creative project might be brilliant, but 
               without the right strategy, it&apos;s just another drop in an ocean of 
@@ -52,7 +71,7 @@ const Hero = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
-            className="order-first md:order-last"
+            className="order-last"
           >
             <Image
               src="/Assets/Vetra 5.png"
