@@ -1,32 +1,57 @@
 "use client";
 
-import { motion, useAnimationControls } from 'framer-motion';
-import Image from 'next/image';
-import { fadeIn, slideIn } from '../annimation/variants';
-import { useEffect } from 'react';
+import { motion, useAnimationControls } from "framer-motion";
+import Image from "next/image";
+import { fadeIn, slideIn } from "../annimation/variants";
+import { useEffect } from "react";
 
 const Hero = () => {
-  // Calendly URL - replace with your actual Calendly link
+  // Calendly URL
   const calendlyUrl = "https://calendly.com/hello-choosevetra/30min";
 
   // Function to open Calendly
   const openCalendly = () => {
-    window.open(calendlyUrl, '_blank');
+    window.open(calendlyUrl, "_blank");
   };
   const headingControls = useAnimationControls();
-  
+
   // Set up the color animation sequence
+  // Set up the color animation sequence with abrupt, blink-like transitions
   useEffect(() => {
     const animateColors = async () => {
       while (true) {
-        await headingControls.start({ color: "#1F2937", transition: { duration: 2 } });
-        await headingControls.start({ color: "#065F46", transition: {  duration:2} });
-        await headingControls.start({ color: "#0F172A", transition: {  duration: 2 } });
-        await headingControls.start({ color: "#5f0606", transition: {  duration: 2} });
+        await headingControls.start({
+          color: "#1F2937",
+          transition: { duration: 0.1 },
+        });
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        await headingControls.start({
+          color: "#fa0a0a",
+          transition: { duration: 0.1 },
+        });
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        await headingControls.start({
+          color: "#0F172A",
+          transition: { duration: 0.1 },
+        });
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        await headingControls.start({
+          color: "#00ff33",
+          transition: { duration: 0.1 },
+        });
+        await new Promise((resolve) => setTimeout(resolve, 1500));
       }
     };
-    
+
     animateColors();
+
+    // Cleanup function
+    return () => {
+      headingControls.stop();
+    };
   }, [headingControls]);
 
   return (
@@ -38,7 +63,7 @@ const Hero = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={slideIn}
-            className="text-center md:text-left"
+            className="text-center md:text-left order-first"
           >
             {/* <span className="text-green-600 text-sm">By Better Marketing Team</span> */}
             <motion.h1
@@ -48,9 +73,9 @@ const Hero = () => {
               For Startups, Scaleups, and Storytellers Who Refuse To Be Ignored
             </motion.h1>
             <p className="text-gray-600  mb-6">
-              Your startup, firm, or creative project might be brilliant, but 
-              without the right strategy, it&apos;s just another drop in an ocean of 
-              noise. We help you avoid that.
+              Your startup, firm, or creative project might be brilliant, but
+              without the right strategy, it&apos;s just another drop in an
+              ocean of noise. We help you avoid that.
             </p>
             <motion.a
               href={calendlyUrl}
