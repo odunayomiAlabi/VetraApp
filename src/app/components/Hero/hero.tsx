@@ -15,44 +15,6 @@ const Hero = () => {
   };
   const headingControls = useAnimationControls();
 
-  // Set up the color animation sequence
-  // Set up the color animation sequence with abrupt, blink-like transitions
-  useEffect(() => {
-    const animateColors = async () => {
-      while (true) {
-        await headingControls.start({
-          color: "#1F2937",
-          transition: { duration: 0.1 },
-        });
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-
-        await headingControls.start({
-          color: "#fa0a0a",
-          transition: { duration: 0.1 },
-        });
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-
-        await headingControls.start({
-          color: "#0F172A",
-          transition: { duration: 0.1 },
-        });
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-
-        await headingControls.start({
-          color: "#00ff33",
-          transition: { duration: 0.1 },
-        });
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-      }
-    };
-
-    animateColors();
-
-    // Cleanup function
-    return () => {
-      headingControls.stop();
-    };
-  }, [headingControls]);
 
   return (
     <section className="px-4  mt-0">
