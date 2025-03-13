@@ -27,7 +27,6 @@ const Hero = () => {
             variants={slideIn}
             className="text-center md:text-left order-first"
           >
-            {/* <span className="text-green-600 text-sm">By Better Marketing Team</span> */}
             <motion.h1
               className="text-4xl font-bold mt-0 mb-8"
               animate={headingControls}
