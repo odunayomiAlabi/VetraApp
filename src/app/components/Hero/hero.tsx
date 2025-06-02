@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Hero = () => {
   // Calendly URL
-  const calendlyUrl = "https://calendly.com/hello-choosevetra/30min";
+  const calendlyUrl = "https://appt.link/meet-with-vetra-team-Mbh6BNuf/web-conference";
 
   // Function to open Calendly
   const openCalendly = () => {

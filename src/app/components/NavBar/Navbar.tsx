@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   
   // Calendly URL
-  const calendlyUrl = "https://calendly.com/hello-choosevetra/30min"; 
+  const calendlyUrl = "https://appt.link/meet-with-vetra-team-Mbh6BNuf/web-conference"; 
   
   // Close the menu when clicking outside
   const handleCloseMenu = () => {

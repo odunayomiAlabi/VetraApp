@@ -6,7 +6,7 @@ import Analytics from "./components/Analytics/Analytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vetra App",
+  title: "The Creative Partner You Need | Vetra",
   description: "For Startups, Scaleups, and Storytellers Who Refuse to Be Ignored.",
 };
 
