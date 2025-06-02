@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const CTA = () => {
-  const calendlyUrl = "https://calendly.com/hello-choosevetra/30min";
+  const calendlyUrl = "https://appt.link/meet-with-vetra-team-Mbh6BNuf/web-conference";
 
   return (
     <section className="relative flex flex-col justify-center items-center 
